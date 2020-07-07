@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+        
+  </head>
+  <body>
+      
+      <div id="root"></div>
+      </div>
+      
+      
+        
+    
+  
+    <script type="text/babel">
+    const Port=(props)=>{
+
+        return(
+            <div  className={props.className} >
+            
+   
+    <div>
+        <img src="spacex.jpg"></img>
+        </div>
+
+    
+    
+    
+  <div>{props.children}</div>
+  
+</div>
+        );
+    };
+  const element=(
+      <div >
+        <Port className="flex-container">
+        
+                <h1>Portfolio</h1>
+  <h2>Shashank</h2>
+  <p >Hobbies</p>
+  <ul>
+    <li>Football</li>
+    <li>cricket</li>
+    <li>Reading Fictious Books</li>
+    <li>Programming</li>
+  </ul>
+  <p>Skill Set</p>
+  <ul>
+    <li>Machine Learning</li>
+    <li>Progressive Web Developement</li>
+    <li>Full Stack Developement</li>
+    <li>Django</li>
+    <li>AWS</li>
+  </ul>
+  <p>I am a software engineering enthusiast with an expeirence in working in Machine Learnng depening on various areas of NLP and Computer visiosn.I have worked on right from image segmentation to building search Engines for ecommerce Companies.
+
+    Currently I have started learning about web Developement from scratch
+    I always prefer to learn from others.</p>
+  
+ 
+  
+
+
+
+
+</Port>
+</div>
+ );
+    
+    
+    
+    ReactDOM.render(element,document.getElementById("root"));
+
+
+      
+    </script>
+  </body>
+</html>
